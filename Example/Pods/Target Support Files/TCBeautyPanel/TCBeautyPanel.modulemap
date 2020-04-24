@@ -1,0 +1,6 @@
+framework module TCBeautyPanel {
+  umbrella header "TCBeautyPanel-umbrella.h"
+
+  export *
+  module * { export * }
+}

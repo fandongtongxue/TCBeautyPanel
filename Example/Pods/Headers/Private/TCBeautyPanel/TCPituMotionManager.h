@@ -1,0 +1,1 @@
+../../../../../TCBeautyPanel/Classes/Model/TCPituMotionManager.h

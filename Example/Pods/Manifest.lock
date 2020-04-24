@@ -1,0 +1,23 @@
+PODS:
+  - TCBeautyPanel (0.1.0):
+    - ZipArchive
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - TCBeautyPanel (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - ZipArchive
+
+EXTERNAL SOURCES:
+  TCBeautyPanel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TCBeautyPanel: a2e1cc53e8eb0dcb7e29164cdc88d811f94638cd
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: 7a04b8cf682d63033aaec44bfdcfb9d8b448ea30
+
+COCOAPODS: 1.9.1

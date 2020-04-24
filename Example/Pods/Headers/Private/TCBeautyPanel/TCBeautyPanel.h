@@ -1,0 +1,1 @@
+../../../../../TCBeautyPanel/Classes/TCBeautyPanel.h
