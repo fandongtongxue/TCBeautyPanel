@@ -3,7 +3,7 @@
 #import "TCPituMotionManager.h"
 #import <UIKit/UIKit.h>
 
-#define L(x) NSLocalizedString(x, nil)
+#define L(x) [[NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"TCBeautyPanel")] pathForResource:@"TCBeautyPanel" ofType:@"bundle"]] localizedStringForKey:x value:@"" table:@""]
 
 @implementation TCPituMotionManager
 {
