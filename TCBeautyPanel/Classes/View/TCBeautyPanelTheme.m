@@ -98,16 +98,7 @@ static void setImageForKey(id self, SEL selector, UIImage *image) {
 {
     self = [super init];
     if (self) {
-        NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"UGCKitResources" ofType:@"bundle"];
-        NSBundle *bundle = [NSBundle bundleWithPath:resourcePath];
-        if (nil == bundle) {
-            bundle = [NSBundle mainBundle];
-        }
-        NSString *path = [bundle pathForResource:@"TCBeautyPanelResources" ofType:@"bundle"];
-        NSBundle *panelResBundle = [NSBundle bundleWithPath:path];
-        if (panelResBundle) {
-            bundle = panelResBundle;
-        }
+        NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"TCBeautyPanel")] pathForResource:@"TCBeautyPanel" ofType:@"bundle"]];
         _imageDict = [NSMutableDictionary dictionary];
 
         _resourceBundle = bundle ?: [NSBundle mainBundle];
