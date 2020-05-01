@@ -1,6 +1,6 @@
 {
   "name": "TCBeautyPanel",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "summary": "A short description of TCBeautyPanel.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/fandongtongxue/TCBeautyPanel",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/fandongtongxue/TCBeautyPanel.git",
-    "tag": "0.1.0"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "9.0"
