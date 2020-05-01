@@ -52,7 +52,7 @@ TCFilterIdentifier const TCFilterIdentifierRixi      = @"rixi";
 {
     self = [super init];
     if (self) {
-        NSBundle *bundle = [NSBundle mainBundle];
+        NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"TCBeautyPanel" ofType:@"bundle"]];
         NSString *path = [bundle pathForResource:@"FilterResource" ofType:@"bundle"];
         NSFileManager *manager = [[NSFileManager alloc] init];
         if ([manager fileExistsAtPath:path]) {
