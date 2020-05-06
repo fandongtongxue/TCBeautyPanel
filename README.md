@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/TCBeautyPanel.svg?style=flat)](https://cocoapods.org/pods/TCBeautyPanel)
 [![Platform](https://img.shields.io/cocoapods/p/TCBeautyPanel.svg?style=flat)](https://cocoapods.org/pods/TCBeautyPanel)
 
+## Source
+
+这个库是从腾讯官方短视频Demo里分离出来制作成单独集成的Pod库，具体详细内容大家可以访问https://github.com/tencentyun/UGSVSDK
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
