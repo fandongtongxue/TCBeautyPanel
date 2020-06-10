@@ -7,39 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05432F26ABC74D2DDCBEDBB8F1B20ACD /* TCBeautyPanelActionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = F4214F5FA0102579BA60EB9292ED4A11 /* TCBeautyPanelActionProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0AFAA84F5463CE979C6149F7F32DF3C7 /* goodluck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C757B35439201997AE4A2E8B30D134F /* goodluck.mp4 */; };
+		05432F26ABC74D2DDCBEDBB8F1B20ACD /* TCBeautyPanelActionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 970B7CB2C953577C86F406A93DC9A6A4 /* TCBeautyPanelActionProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		15D45A008E05AA8AA3F17CC011756EAD /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 753E21113DB9F7FE3C52FB9A184208BA /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		253BC202D685DB0B2F03095A71D72C8D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6747CBBC297448085D64199BF7992B /* Media.xcassets */; };
 		2D61AA74FDA295755556EB74A8D0BAA7 /* Pods-TCBeautyPanel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F725C10EC6F137CC4F27FB4C4FFA71 /* Pods-TCBeautyPanel_Example-dummy.m */; };
-		2FB861ABC80D6021E10A3A1C765BEFAF /* TCBeautyPanelActionPerformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 867588B43D340BDD6C668DF48BF2BF0F /* TCBeautyPanelActionPerformer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		36F6B9B1A7F4D28DAB346700451258A0 /* TCFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BBCBEE770D2441FAAB991BBBE526ED /* TCFilter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3A8D6C2940009A3E501DA2A8256E667E /* TCBeautyPanelView.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2B9565D74CF5E4F12CE2B4E06FAC3A /* TCBeautyPanelView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FB861ABC80D6021E10A3A1C765BEFAF /* TCBeautyPanelActionPerformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B40C132142A879A94F10BACCAC58405 /* TCBeautyPanelActionPerformer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36F6B9B1A7F4D28DAB346700451258A0 /* TCFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A68D63651432EECD35259227DE17CF0B /* TCFilter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A8D6C2940009A3E501DA2A8256E667E /* TCBeautyPanelView.h in Headers */ = {isa = PBXBuildFile; fileRef = D2A7FC85D6268FF9470968AF3D7860CE /* TCBeautyPanelView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4F42BE91854D5E184AC3668CE8383B8C /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 19EF537239B8FF25F5AAE980F1E5B6FA /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		53DC6F5F5C2602E620C06CD99FD5A187 /* TCPituMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2682971C162CD75E40359064852951DC /* TCPituMotionManager.m */; };
-		6155B2895F51A944EB8B6CF4D4458348 /* TCBeautyPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5EAF59526065DC722BE0B836A2332D /* TCBeautyPanel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		53DC6F5F5C2602E620C06CD99FD5A187 /* TCPituMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D847AD552B6EA7BDB95C0560F6B33285 /* TCPituMotionManager.m */; };
+		576C66E8875BDEF5DB592132399EAEF9 /* FilterResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D4B0C3401BE8EC5E12E0408B33F7AB7 /* FilterResource.bundle */; };
+		6155B2895F51A944EB8B6CF4D4458348 /* TCBeautyPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = E894F65E880BB10CD48F3F2DD54E618E /* TCBeautyPanel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		72AFC26D97BC1F82DCF54599BCF4DE39 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AF861589EFAD173AA3A069DCB04CA5 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		89CB006F6D964E3ED0D63224DEBBD7D7 /* TCMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76F9EB09869AEF01FA4936D20EDF0CE /* TCMenuView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		89CB006F6D964E3ED0D63224DEBBD7D7 /* TCMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = C50D46E61C3F0D978D209B74D8512A17 /* TCMenuView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8BE67525C963858530886096B4ACEF7B /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F5CF1CA0202F3DBABA4474B5BDC2CC /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9308ACAF5E8E8965376AE85EC1490E99 /* TCBeautyPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB45EB22A155E08FA2DFF2309B531D1 /* TCBeautyPanel-dummy.m */; };
+		9308ACAF5E8E8965376AE85EC1490E99 /* TCBeautyPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F724F1C7CE22B64498FE72643197ABA /* TCBeautyPanel-dummy.m */; };
 		A336C45588716DDDD3D8CED0AEC52862 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F1DF59D755B00EBFB4AA777EB3EA6AD /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A36DF3194C1124861F7BF59F17B01A44 /* TCBeautyPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = B590116C524C6614D06245930FAFBB47 /* TCBeautyPanelView.m */; };
-		A8CF1AA859711249B58938D2C021A212 /* TCFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC80ED65F3D048C5952C4A90973848B /* TCFilter.m */; };
+		A36DF3194C1124861F7BF59F17B01A44 /* TCBeautyPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A19FA6A01F3E8FCDF61F124B2B59C43 /* TCBeautyPanelView.m */; };
+		A6DEFAE011E9332C7FA709BF6A439E84 /* goodluck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 06252921A78A7771B116AC40FE34FC52 /* goodluck.mp4 */; };
+		A8CF1AA859711249B58938D2C021A212 /* TCFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE193699A18A94971E84FC6E92B11D5 /* TCFilter.m */; };
 		AA8F4900A412AB7C42DF58BFF94DD6A0 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 702E1F9A4F51A84343E1345BD7EB5C43 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ABE0F5FCB940C00034454B8C7D52A04A /* TCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD8A0302AB17B566F6F6ED80E98BE63 /* TCMenuView.m */; };
+		ABE0F5FCB940C00034454B8C7D52A04A /* TCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6914C74A43187607274EEB8CCF724A6D /* TCMenuView.m */; };
 		B3396D1639ABDE5E700333BCDA95D5B1 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1D23CFC53ECCD34FBEF8C4F9D43BFE /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		B71B9BF7C068043356F4ACF00B65D651 /* TCBeautyPanelActionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBF5D47F84B82FE1C1D411878CF7C07 /* TCBeautyPanelActionProxy.m */; };
+		B71B9BF7C068043356F4ACF00B65D651 /* TCBeautyPanelActionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F24CB053A332DA807526E8BDECD811 /* TCBeautyPanelActionProxy.m */; };
 		BD1B07B5E3ADFAAFB5DDF71455F1C12E /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 5530EF273B2D1A3DAE30A4CAE23687F8 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BE180290658CC74CD19163FF71E7F87E /* TCPituMotionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B958E48DF4639389B00D4B3C1559D071 /* TCPituMotionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE180290658CC74CD19163FF71E7F87E /* TCPituMotionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022CE88F102E286BEAA8723E3740705 /* TCPituMotionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C6824B2B4B796FD32F0EA842196D88C1 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8723B9DE5A794747809EC524C205B /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CCE6AA1C9B8D867400B9C37FF7995F00 /* ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80E82D1C12071B8C468B0D8A0F9EF /* ZipArchive-dummy.m */; };
 		D2D40D94DE20745B0BF8291CE78B9126 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 07378DC9DA37F72ED267E1F75379456E /* ZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D3E9B7DFB7FEFB7EFF77278411FF6ED6 /* TCMenuItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 635CECE8AA46EC4F557FEEA0C2409460 /* TCMenuItemCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DF2DB1ACB010E0270319FB61C5B5CADE /* TCBeautyPanelTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E1F32DA915D308572FB8E29302774 /* TCBeautyPanelTheme.m */; };
+		D3E9B7DFB7FEFB7EFF77278411FF6ED6 /* TCMenuItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC3341B0D82C5F96017C517AE39A5EE /* TCMenuItemCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3FB6F0968A4524E2CF8B240B54A8773 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43B131E72966D267213FDD912AC95C0 /* Media.xcassets */; };
+		DF2DB1ACB010E0270319FB61C5B5CADE /* TCBeautyPanelTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EC7DDFC69D4D1483266CBD37F1698A /* TCBeautyPanelTheme.m */; };
 		E9B5D351E9D28423763444B094AEC8B4 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FF04D4655F484D6E6472C62ED9543DC /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
-		F1075013A05DA26F8D7B8E449472A84E /* TCMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 214DE016CF886EF62F0B88826ED88B68 /* TCMenuItemCell.m */; };
+		F1075013A05DA26F8D7B8E449472A84E /* TCMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A823CCCD5227E18705C4710787564CED /* TCMenuItemCell.m */; };
 		F37C5AEFC5A4EA8F2F38C5B8FC5E2565 /* Pods-TCBeautyPanel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F09234A38B5AA16AAA0776FE483CB6 /* Pods-TCBeautyPanel_Tests-dummy.m */; };
-		FDA58B710F87229C2CF23632AA2BF9C5 /* TCBeautyPanelTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B8AFC157ACAEFFE0D749EAA22056EA /* TCBeautyPanelTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FDA58B710F87229C2CF23632AA2BF9C5 /* TCBeautyPanelTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 6917F2441CBA6C6F96006D1142709111 /* TCBeautyPanelTheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,63 +83,64 @@
 
 /* Begin PBXFileReference section */
 		0273032557B04648D6BE2973D91FFA11 /* Pods-TCBeautyPanel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBeautyPanel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		06252921A78A7771B116AC40FE34FC52 /* goodluck.mp4 */ = {isa = PBXFileReference; includeInIndex = 1; name = goodluck.mp4; path = TCBeautyPanel/Assets/goodluck.mp4; sourceTree = "<group>"; };
 		07378DC9DA37F72ED267E1F75379456E /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		0A19FA6A01F3E8FCDF61F124B2B59C43 /* TCBeautyPanelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBeautyPanelView.m; sourceTree = "<group>"; };
 		0E43BADFC790DEBAC378583C5E1054F9 /* ZipArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.release.xcconfig; sourceTree = "<group>"; };
+		1022CE88F102E286BEAA8723E3740705 /* TCPituMotionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCPituMotionManager.h; sourceTree = "<group>"; };
+		18BD691ADE81960F24094CEF317BD415 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		19EF537239B8FF25F5AAE980F1E5B6FA /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
-		1D5E1F32DA915D308572FB8E29302774 /* TCBeautyPanelTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBeautyPanelTheme.m; sourceTree = "<group>"; };
-		214DE016CF886EF62F0B88826ED88B68 /* TCMenuItemCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCMenuItemCell.m; sourceTree = "<group>"; };
 		23DB4D52E683458A88F3D89337D3CB35 /* Pods-TCBeautyPanel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBeautyPanel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2682971C162CD75E40359064852951DC /* TCPituMotionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCPituMotionManager.m; sourceTree = "<group>"; };
-		294114D34BCAD1CDB3E5DCE648FBE4AA /* TCBeautyPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCBeautyPanel.debug.xcconfig; sourceTree = "<group>"; };
 		37F5CF1CA0202F3DBABA4474B5BDC2CC /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
-		45B8AFC157ACAEFFE0D749EAA22056EA /* TCBeautyPanelTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBeautyPanelTheme.h; sourceTree = "<group>"; };
+		3AE193699A18A94971E84FC6E92B11D5 /* TCFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCFilter.m; sourceTree = "<group>"; };
+		3F724F1C7CE22B64498FE72643197ABA /* TCBeautyPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCBeautyPanel-dummy.m"; sourceTree = "<group>"; };
 		4C012C40ABFD5FE35934CA13FD728CEC /* Pods-TCBeautyPanel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCBeautyPanel_Example-resources.sh"; sourceTree = "<group>"; };
 		4C39D73EA56B15038E88D653ECBD603C /* TCBeautyPanel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TCBeautyPanel.bundle; path = "TCBeautyPanel-TCBeautyPanel.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		519609C7933EEF290AD4099C16ED7B22 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		530A75C06325BC815F3573D0E78CCB63 /* TCBeautyPanel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TCBeautyPanel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4EC3341B0D82C5F96017C517AE39A5EE /* TCMenuItemCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCMenuItemCell.h; sourceTree = "<group>"; };
 		5530EF273B2D1A3DAE30A4CAE23687F8 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
-		5B5EAF59526065DC722BE0B836A2332D /* TCBeautyPanel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCBeautyPanel.h; path = TCBeautyPanel/Classes/TCBeautyPanel.h; sourceTree = "<group>"; };
-		5C757B35439201997AE4A2E8B30D134F /* goodluck.mp4 */ = {isa = PBXFileReference; includeInIndex = 1; name = goodluck.mp4; path = TCBeautyPanel/Assets/goodluck.mp4; sourceTree = "<group>"; };
+		566ED0DA72E0BF0FCAC018B9BDAF620F /* TCBeautyPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCBeautyPanel.debug.xcconfig; sourceTree = "<group>"; };
+		5D4B0C3401BE8EC5E12E0408B33F7AB7 /* FilterResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = FilterResource.bundle; path = TCBeautyPanel/Assets/FilterResource.bundle; sourceTree = "<group>"; };
 		5F1DF59D755B00EBFB4AA777EB3EA6AD /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
 		5FF04D4655F484D6E6472C62ED9543DC /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
-		635CECE8AA46EC4F557FEEA0C2409460 /* TCMenuItemCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCMenuItemCell.h; sourceTree = "<group>"; };
+		6914C74A43187607274EEB8CCF724A6D /* TCMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCMenuView.m; sourceTree = "<group>"; };
+		6917F2441CBA6C6F96006D1142709111 /* TCBeautyPanelTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBeautyPanelTheme.h; sourceTree = "<group>"; };
 		6F128D4204D3421461CC5AEADF447FF0 /* libTCBeautyPanel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTCBeautyPanel.a; path = libTCBeautyPanel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		702E1F9A4F51A84343E1345BD7EB5C43 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
-		7380C2478EDD31672908343C02B137DE /* ResourceBundle-TCBeautyPanel-TCBeautyPanel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TCBeautyPanel-TCBeautyPanel-Info.plist"; sourceTree = "<group>"; };
 		753E21113DB9F7FE3C52FB9A184208BA /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		776AC2504B44DF706D0FD6C56AE47930 /* ResourceBundle-TCBeautyPanel-TCBeautyPanel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TCBeautyPanel-TCBeautyPanel-Info.plist"; sourceTree = "<group>"; };
 		7E68B8074F69E02AB8D1374FDFDB74B7 /* Pods-TCBeautyPanel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBeautyPanel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		867588B43D340BDD6C668DF48BF2BF0F /* TCBeautyPanelActionPerformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBeautyPanelActionPerformer.h; sourceTree = "<group>"; };
 		89F725C10EC6F137CC4F27FB4C4FFA71 /* Pods-TCBeautyPanel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCBeautyPanel_Example-dummy.m"; sourceTree = "<group>"; };
-		8CBF5D47F84B82FE1C1D411878CF7C07 /* TCBeautyPanelActionProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBeautyPanelActionProxy.m; sourceTree = "<group>"; };
+		8A4A1D82DFAD8A0F460999458151C8D1 /* TCBeautyPanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCBeautyPanel.release.xcconfig; sourceTree = "<group>"; };
 		8E668DEFCFDEE46E6925C204F1A6AA12 /* libPods-TCBeautyPanel_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TCBeautyPanel_Example.a"; path = "libPods-TCBeautyPanel_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EC7DDFC69D4D1483266CBD37F1698A /* TCBeautyPanelTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBeautyPanelTheme.m; sourceTree = "<group>"; };
+		970B7CB2C953577C86F406A93DC9A6A4 /* TCBeautyPanelActionProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBeautyPanelActionProxy.h; sourceTree = "<group>"; };
 		972B5B7F62399D840A4400A3CB3B8ED6 /* Pods-TCBeautyPanel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCBeautyPanel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		97CCF75409EF6A043BC4B9998F00D644 /* Pods-TCBeautyPanel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCBeautyPanel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		99F24CB053A332DA807526E8BDECD811 /* TCBeautyPanelActionProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBeautyPanelActionProxy.m; sourceTree = "<group>"; };
 		9AB80E82D1C12071B8C468B0D8A0F9EF /* ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipArchive-dummy.m"; sourceTree = "<group>"; };
+		9B40C132142A879A94F10BACCAC58405 /* TCBeautyPanelActionPerformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBeautyPanelActionPerformer.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DF02136F31D054CEF0DA08A345A3296 /* TCBeautyPanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCBeautyPanel.release.xcconfig; sourceTree = "<group>"; };
-		A76F9EB09869AEF01FA4936D20EDF0CE /* TCMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCMenuView.h; sourceTree = "<group>"; };
+		A68D63651432EECD35259227DE17CF0B /* TCFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCFilter.h; sourceTree = "<group>"; };
+		A823CCCD5227E18705C4710787564CED /* TCMenuItemCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCMenuItemCell.m; sourceTree = "<group>"; };
 		AEFEAE505192E31732796CEA9593581B /* Pods-TCBeautyPanel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBeautyPanel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B590116C524C6614D06245930FAFBB47 /* TCBeautyPanelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCBeautyPanelView.m; sourceTree = "<group>"; };
-		B958E48DF4639389B00D4B3C1559D071 /* TCPituMotionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCPituMotionManager.h; sourceTree = "<group>"; };
+		AF45E27630669A665E213198A6DF78CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		BE33FCFD40426EA0C09EFDD27227DDCB /* Pods-TCBeautyPanel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBeautyPanel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE5F87D07D895EA57D08F907A536FBDE /* libPods-TCBeautyPanel_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TCBeautyPanel_Tests.a"; path = "libPods-TCBeautyPanel_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C50D46E61C3F0D978D209B74D8512A17 /* TCMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCMenuView.h; sourceTree = "<group>"; };
+		C6CC70CDD79E9DDC51DB164B5F9B8B4E /* TCBeautyPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCBeautyPanel-prefix.pch"; sourceTree = "<group>"; };
 		C7F09234A38B5AA16AAA0776FE483CB6 /* Pods-TCBeautyPanel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCBeautyPanel_Tests-dummy.m"; sourceTree = "<group>"; };
 		C9E561BEAA928D0FB59F8710D800EBC4 /* ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-prefix.pch"; sourceTree = "<group>"; };
 		CB1D23CFC53ECCD34FBEF8C4F9D43BFE /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
-		CC2B9565D74CF5E4F12CE2B4E06FAC3A /* TCBeautyPanelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBeautyPanelView.h; sourceTree = "<group>"; };
+		D2A7FC85D6268FF9470968AF3D7860CE /* TCBeautyPanelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBeautyPanelView.h; sourceTree = "<group>"; };
 		D3B8723B9DE5A794747809EC524C205B /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
-		D4BBCBEE770D2441FAAB991BBBE526ED /* TCFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCFilter.h; sourceTree = "<group>"; };
+		D847AD552B6EA7BDB95C0560F6B33285 /* TCPituMotionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCPituMotionManager.m; sourceTree = "<group>"; };
 		DAFC4FBA3B95C5E9D5CBFC260AA08804 /* libZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZipArchive.a; path = libZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8BAE9759C7AD8688784D846392D695 /* Pods-TCBeautyPanel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCBeautyPanel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DDC80ED65F3D048C5952C4A90973848B /* TCFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCFilter.m; sourceTree = "<group>"; };
 		E3AF861589EFAD173AA3A069DCB04CA5 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
+		E43B131E72966D267213FDD912AC95C0 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = TCBeautyPanel/Assets/Media.xcassets; sourceTree = "<group>"; };
 		E738B23F0FE84E1C834414BC31FF8291 /* ZipArchive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.debug.xcconfig; sourceTree = "<group>"; };
-		EEEC761A5F2F61820EC135B9D8988792 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		F4214F5FA0102579BA60EB9292ED4A11 /* TCBeautyPanelActionProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCBeautyPanelActionProxy.h; sourceTree = "<group>"; };
-		F55DDA4AB088C1DBADF50B88E3105D16 /* TCBeautyPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCBeautyPanel-prefix.pch"; sourceTree = "<group>"; };
-		FBB45EB22A155E08FA2DFF2309B531D1 /* TCBeautyPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCBeautyPanel-dummy.m"; sourceTree = "<group>"; };
-		FC6747CBBC297448085D64199BF7992B /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = TCBeautyPanel/Assets/Media.xcassets; sourceTree = "<group>"; };
-		FFD8A0302AB17B566F6F6ED80E98BE63 /* TCMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCMenuView.m; sourceTree = "<group>"; };
+		E894F65E880BB10CD48F3F2DD54E618E /* TCBeautyPanel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCBeautyPanel.h; path = TCBeautyPanel/Classes/TCBeautyPanel.h; sourceTree = "<group>"; };
+		FEB473DE9A78D9123EB7E1E2156F7D79 /* TCBeautyPanel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TCBeautyPanel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0312D1AA0336D92936718D7C272FF189 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				4EC3341B0D82C5F96017C517AE39A5EE /* TCMenuItemCell.h */,
+				A823CCCD5227E18705C4710787564CED /* TCMenuItemCell.m */,
+				C50D46E61C3F0D978D209B74D8512A17 /* TCMenuView.h */,
+				6914C74A43187607274EEB8CCF724A6D /* TCMenuView.m */,
+			);
+			name = Menu;
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0B52CDE4A7A7F0ACFBB6AE731123279A /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				A68D63651432EECD35259227DE17CF0B /* TCFilter.h */,
+				3AE193699A18A94971E84FC6E92B11D5 /* TCFilter.m */,
+			);
+			name = Filter;
+			path = TCBeautyPanel/Classes/Filter;
+			sourceTree = "<group>";
+		};
+		0FF417BCD06733733B85DB5D9D21F282 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D4B0C3401BE8EC5E12E0408B33F7AB7 /* FilterResource.bundle */,
+				06252921A78A7771B116AC40FE34FC52 /* goodluck.mp4 */,
+				E43B131E72966D267213FDD912AC95C0 /* Media.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		13183C5F90C98842C9C7335AAA7AE0DA /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				9B40C132142A879A94F10BACCAC58405 /* TCBeautyPanelActionPerformer.h */,
+			);
+			name = Interfaces;
+			path = TCBeautyPanel/Classes/Interfaces;
+			sourceTree = "<group>";
+		};
 		19A3C942077BC2D241EEA3D012ABE6BF /* ZipArchive */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,29 +243,6 @@
 			path = ZipArchive;
 			sourceTree = "<group>";
 		};
-		38CC49CFB1D2E510644181E4E77702BA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				45B8AFC157ACAEFFE0D749EAA22056EA /* TCBeautyPanelTheme.h */,
-				1D5E1F32DA915D308572FB8E29302774 /* TCBeautyPanelTheme.m */,
-				CC2B9565D74CF5E4F12CE2B4E06FAC3A /* TCBeautyPanelView.h */,
-				B590116C524C6614D06245930FAFBB47 /* TCBeautyPanelView.m */,
-				A3E937F97185ACCEFC9F6AD9009651DD /* Menu */,
-			);
-			name = View;
-			path = TCBeautyPanel/Classes/View;
-			sourceTree = "<group>";
-		};
-		3C776E4970644367ED9DA841C1F44337 /* Filter */ = {
-			isa = PBXGroup;
-			children = (
-				D4BBCBEE770D2441FAAB991BBBE526ED /* TCFilter.h */,
-				DDC80ED65F3D048C5952C4A90973848B /* TCFilter.m */,
-			);
-			name = Filter;
-			path = TCBeautyPanel/Classes/Filter;
-			sourceTree = "<group>";
-		};
 		3FF058AF9332F6B70800B22307FCB49A /* Pods-TCBeautyPanel_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,13 +257,20 @@
 			path = "Target Support Files/Pods-TCBeautyPanel_Example";
 			sourceTree = "<group>";
 		};
-		4A7E95D6CEA10F0441BEE021FC2D14A0 /* Resources */ = {
+		53D3420446EB61767C69024016BA346A /* TCBeautyPanel */ = {
 			isa = PBXGroup;
 			children = (
-				5C757B35439201997AE4A2E8B30D134F /* goodluck.mp4 */,
-				FC6747CBBC297448085D64199BF7992B /* Media.xcassets */,
+				E894F65E880BB10CD48F3F2DD54E618E /* TCBeautyPanel.h */,
+				0B52CDE4A7A7F0ACFBB6AE731123279A /* Filter */,
+				13183C5F90C98842C9C7335AAA7AE0DA /* Interfaces */,
+				8DE5A66FDFB009269169DA623343E29F /* Model */,
+				DFA4BA1D79ECB4AC96451BB8CBD14742 /* Pod */,
+				0FF417BCD06733733B85DB5D9D21F282 /* Resources */,
+				E3E7DBD41E2B476C5318BBCE8873BE31 /* Support Files */,
+				86C142316C00AEE9B0C7241DDC9AF6A0 /* View */,
 			);
-			name = Resources;
+			name = TCBeautyPanel;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		6AB889BCB99FDF92765324764F33A399 /* Products */ = {
@@ -258,59 +285,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8FB001A232F7135331083223D4A6E1F2 /* Development Pods */ = {
+		86C142316C00AEE9B0C7241DDC9AF6A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F090B34E0B18983305CC1CF3518B2E44 /* TCBeautyPanel */,
+				6917F2441CBA6C6F96006D1142709111 /* TCBeautyPanelTheme.h */,
+				93EC7DDFC69D4D1483266CBD37F1698A /* TCBeautyPanelTheme.m */,
+				D2A7FC85D6268FF9470968AF3D7860CE /* TCBeautyPanelView.h */,
+				0A19FA6A01F3E8FCDF61F124B2B59C43 /* TCBeautyPanelView.m */,
+				0312D1AA0336D92936718D7C272FF189 /* Menu */,
 			);
-			name = "Development Pods";
+			name = View;
+			path = TCBeautyPanel/Classes/View;
 			sourceTree = "<group>";
 		};
-		A3E937F97185ACCEFC9F6AD9009651DD /* Menu */ = {
+		8DE5A66FDFB009269169DA623343E29F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				635CECE8AA46EC4F557FEEA0C2409460 /* TCMenuItemCell.h */,
-				214DE016CF886EF62F0B88826ED88B68 /* TCMenuItemCell.m */,
-				A76F9EB09869AEF01FA4936D20EDF0CE /* TCMenuView.h */,
-				FFD8A0302AB17B566F6F6ED80E98BE63 /* TCMenuView.m */,
-			);
-			name = Menu;
-			path = Menu;
-			sourceTree = "<group>";
-		};
-		BE8F85B92EF4217B929B862A22BF994D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F4214F5FA0102579BA60EB9292ED4A11 /* TCBeautyPanelActionProxy.h */,
-				8CBF5D47F84B82FE1C1D411878CF7C07 /* TCBeautyPanelActionProxy.m */,
-				B958E48DF4639389B00D4B3C1559D071 /* TCPituMotionManager.h */,
-				2682971C162CD75E40359064852951DC /* TCPituMotionManager.m */,
+				970B7CB2C953577C86F406A93DC9A6A4 /* TCBeautyPanelActionProxy.h */,
+				99F24CB053A332DA807526E8BDECD811 /* TCBeautyPanelActionProxy.m */,
+				1022CE88F102E286BEAA8723E3740705 /* TCPituMotionManager.h */,
+				D847AD552B6EA7BDB95C0560F6B33285 /* TCPituMotionManager.m */,
 			);
 			name = Model;
 			path = TCBeautyPanel/Classes/Model;
 			sourceTree = "<group>";
 		};
-		C47422E9CC9821FE94EAE3615401DA4E /* Pod */ = {
+		8FB001A232F7135331083223D4A6E1F2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				519609C7933EEF290AD4099C16ED7B22 /* LICENSE */,
-				EEEC761A5F2F61820EC135B9D8988792 /* README.md */,
-				530A75C06325BC815F3573D0E78CCB63 /* TCBeautyPanel.podspec */,
+				53D3420446EB61767C69024016BA346A /* TCBeautyPanel */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		CCCA52D2CB6332959BBF9CB8A79B3C64 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7380C2478EDD31672908343C02B137DE /* ResourceBundle-TCBeautyPanel-TCBeautyPanel-Info.plist */,
-				FBB45EB22A155E08FA2DFF2309B531D1 /* TCBeautyPanel-dummy.m */,
-				F55DDA4AB088C1DBADF50B88E3105D16 /* TCBeautyPanel-prefix.pch */,
-				294114D34BCAD1CDB3E5DCE648FBE4AA /* TCBeautyPanel.debug.xcconfig */,
-				9DF02136F31D054CEF0DA08A345A3296 /* TCBeautyPanel.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TCBeautyPanel";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -332,6 +337,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DFA4BA1D79ECB4AC96451BB8CBD14742 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				18BD691ADE81960F24094CEF317BD415 /* LICENSE */,
+				AF45E27630669A665E213198A6DF78CC /* README.md */,
+				FEB473DE9A78D9123EB7E1E2156F7D79 /* TCBeautyPanel.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		DFB3246B1D9C8DCB61F59B9EA0E2BB87 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +354,19 @@
 				EE7027F7769E59E4B0627C02EDEF458C /* Pods-TCBeautyPanel_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E3E7DBD41E2B476C5318BBCE8873BE31 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				776AC2504B44DF706D0FD6C56AE47930 /* ResourceBundle-TCBeautyPanel-TCBeautyPanel-Info.plist */,
+				3F724F1C7CE22B64498FE72643197ABA /* TCBeautyPanel-dummy.m */,
+				C6CC70CDD79E9DDC51DB164B5F9B8B4E /* TCBeautyPanel-prefix.pch */,
+				566ED0DA72E0BF0FCAC018B9BDAF620F /* TCBeautyPanel.debug.xcconfig */,
+				8A4A1D82DFAD8A0F460999458151C8D1 /* TCBeautyPanel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TCBeautyPanel";
 			sourceTree = "<group>";
 		};
 		E7BB44B7C92C53FC9ECA502519F4510C /* Support Files */ = {
@@ -364,31 +392,6 @@
 			);
 			name = "Pods-TCBeautyPanel_Tests";
 			path = "Target Support Files/Pods-TCBeautyPanel_Tests";
-			sourceTree = "<group>";
-		};
-		EF68F669124A73685FFF1041C81FAE9D /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				867588B43D340BDD6C668DF48BF2BF0F /* TCBeautyPanelActionPerformer.h */,
-			);
-			name = Interfaces;
-			path = TCBeautyPanel/Classes/Interfaces;
-			sourceTree = "<group>";
-		};
-		F090B34E0B18983305CC1CF3518B2E44 /* TCBeautyPanel */ = {
-			isa = PBXGroup;
-			children = (
-				5B5EAF59526065DC722BE0B836A2332D /* TCBeautyPanel.h */,
-				3C776E4970644367ED9DA841C1F44337 /* Filter */,
-				EF68F669124A73685FFF1041C81FAE9D /* Interfaces */,
-				BE8F85B92EF4217B929B862A22BF994D /* Model */,
-				C47422E9CC9821FE94EAE3615401DA4E /* Pod */,
-				4A7E95D6CEA10F0441BEE021FC2D14A0 /* Resources */,
-				CCCA52D2CB6332959BBF9CB8A79B3C64 /* Support Files */,
-				38CC49CFB1D2E510644181E4E77702BA /* View */,
-			);
-			name = TCBeautyPanel;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		F2FBAB7F0731C6DFCF9698BE6E92ECFD /* Pods */ = {
@@ -454,7 +457,7 @@
 			buildPhases = (
 				86816D29AB09E9EB2F674B46CF364398 /* Sources */,
 				831961178DF7952E78AF4916957025B2 /* Frameworks */,
-				13ED7E982036AD6318B6C74750F3D093 /* Resources */,
+				0AC68D068439F4423CB363045D18EC96 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -570,12 +573,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		13ED7E982036AD6318B6C74750F3D093 /* Resources */ = {
+		0AC68D068439F4423CB363045D18EC96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AFAA84F5463CE979C6149F7F32DF3C7 /* goodluck.mp4 in Resources */,
-				253BC202D685DB0B2F03095A71D72C8D /* Media.xcassets in Resources */,
+				576C66E8875BDEF5DB592132399EAEF9 /* FilterResource.bundle in Resources */,
+				A6DEFAE011E9332C7FA709BF6A439E84 /* goodluck.mp4 in Resources */,
+				D3FB6F0968A4524E2CF8B240B54A8773 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +675,7 @@
 /* Begin XCBuildConfiguration section */
 		24F60FC30C853E2540526164EA5A1AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 294114D34BCAD1CDB3E5DCE648FBE4AA /* TCBeautyPanel.debug.xcconfig */;
+			baseConfigurationReference = 566ED0DA72E0BF0FCAC018B9BDAF620F /* TCBeautyPanel.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -737,7 +741,7 @@
 		};
 		37F0337FB0CC4B96E5B32449C6CA7720 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DF02136F31D054CEF0DA08A345A3296 /* TCBeautyPanel.release.xcconfig */;
+			baseConfigurationReference = 8A4A1D82DFAD8A0F460999458151C8D1 /* TCBeautyPanel.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TCBeautyPanel";
@@ -754,7 +758,7 @@
 		};
 		47BD3B6B82799C82CE22D914D85B9C75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DF02136F31D054CEF0DA08A345A3296 /* TCBeautyPanel.release.xcconfig */;
+			baseConfigurationReference = 8A4A1D82DFAD8A0F460999458151C8D1 /* TCBeautyPanel.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -951,7 +955,7 @@
 		};
 		DF2AD3BDE3AE4B16C14EE8AB1A13E49B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 294114D34BCAD1CDB3E5DCE648FBE4AA /* TCBeautyPanel.debug.xcconfig */;
+			baseConfigurationReference = 566ED0DA72E0BF0FCAC018B9BDAF620F /* TCBeautyPanel.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TCBeautyPanel";
