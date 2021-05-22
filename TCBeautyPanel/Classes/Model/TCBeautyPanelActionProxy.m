@@ -14,21 +14,29 @@
 - (void)setSpecialRatio:(float)level;
 @end
 
+NS_INLINE BOOL isFilterConcentrationSetter(SEL selector) {
+    return strcmp(sel_getName(selector), sel_getName(@selector(setFilterConcentration:))) == 0;
+}
+
 @implementation TCBeautyPanelActionProxy
 {
     __weak id _object;
     __weak id _beautyManager;
+    SEL       _filterConcentrationAlternativeSetter;
 }
 
 + (instancetype)proxyWithSDKObject:(id)object {
-    return [[TCBeautyPanelActionProxy alloc] initWithObject:object];
+    return [[TCBeautyPanelActionProxy alloc] initWithObject:object
+                                      filterConcentrationSetter:@selector(setSpecialRatio:)];
 }
 
 + (instancetype)proxyWithSDKObject:(id)object filterConcentrationSetter:(SEL)setter {
-    return [[TCBeautyPanelActionProxy alloc] initWithObject:object];
+    return [[TCBeautyPanelActionProxy alloc] initWithObject:object
+                                      filterConcentrationSetter:setter];
 }
 
-- (instancetype)initWithObject:(id)object {
+- (instancetype)initWithObject:(id)object filterConcentrationSetter:(SEL)setter {
+    _filterConcentrationAlternativeSetter = setter;
     if (![object respondsToSelector:@selector(getBeautyManager)]) {
         NSLog(@"%s failed, %@ doesn't has getBeautyManager method", __PRETTY_FUNCTION__, object);
         return nil;
@@ -48,6 +56,8 @@
         return [_beautyManager methodSignatureForSelector:sel];
     } else if ([_object respondsToSelector:sel])  {
         return [_object methodSignatureForSelector:sel];
+    } else if (_filterConcentrationAlternativeSetter && isFilterConcentrationSetter(sel)) {
+        return [_object methodSignatureForSelector:_filterConcentrationAlternativeSetter];
     }
 
     return [super methodSignatureForSelector:sel];
@@ -59,6 +69,9 @@
         [invocation invokeWithTarget:_beautyManager];
     } else if ([_object respondsToSelector: selector]) {
         [invocation invokeWithTarget:_object];
+    } else if (_filterConcentrationAlternativeSetter && isFilterConcentrationSetter(selector)) {
+        invocation.selector = _filterConcentrationAlternativeSetter;
+        [invocation invokeWithTarget:_object];
     }
 }
 
@@ -69,7 +82,17 @@
     if ([_object respondsToSelector:aSelector]) {
         return YES;
     }
+    if (_filterConcentrationAlternativeSetter && isFilterConcentrationSetter(aSelector)) {
+        return [_object respondsToSelector:_filterConcentrationAlternativeSetter];
+    }
     return NO;
 }
 
+@end
+
+@implementation TCBeautyPanel (SDK)
++ (instancetype)beautyPanelWithFrame:(CGRect)frame SDKObject:(id)object {
+    return [TCBeautyPanel beautyPanelWithFrame:frame
+                            actionPerformer:[TCBeautyPanelActionProxy proxyWithSDKObject:object]];
+}
 @end

@@ -16,4 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)proxyWithSDKObject:(id)object;
 @end
 
+@interface TCBeautyPanel (SDK)
++ (instancetype)beautyPanelWithFrame:(CGRect)frame SDKObject:(id)object;
+@end
+
 NS_ASSUME_NONNULL_END

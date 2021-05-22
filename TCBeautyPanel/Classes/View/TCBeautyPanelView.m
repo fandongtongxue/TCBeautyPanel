@@ -14,7 +14,6 @@
 #import "TCBeautyPanelTheme.h"
 #import "TCBeautyPanelActionPerformer.h"
 #import "TCFilter.h"
-#import "TCBeautyPanelActionProxy.h"
 
 #define BeautyViewMargin 8
 #define BeautyViewSliderHeight 30
@@ -130,14 +129,6 @@ static  TCBeautyPanelItem * makeMenuItem(NSString *title, UIImage *icon, id targ
 
 #pragma mark - Public API
 + (instancetype)beautyPanelWithFrame:(CGRect)frame
-                               theme:(nullable id<TCBeautyPanelThemeProtocol>)theme
-                           SDKObject:(id)SDKObject {
-    return [[TCBeautyPanel alloc] initWithFrame:frame
-                                          theme:nil
-                                actionPerformer:[TCBeautyPanelActionProxy proxyWithSDKObject:SDKObject]];
-}
-
-+ (instancetype)beautyPanelWithFrame:(CGRect)frame
                      actionPerformer:(id<TCBeautyPanelActionPerformer>)actionPerformer {
     TCBeautyPanel *panel = [[TCBeautyPanel alloc] initWithFrame:frame
                                                                   theme:nil
@@ -199,9 +190,9 @@ static  TCBeautyPanelItem * makeMenuItem(NSString *title, UIImage *icon, id targ
 - (void)resetAndApplyValues
 {
     // 默认值配置
-    const BeautyMenuItem defaultBeautyStyle = BeautyMenuItemNature;
-    self.beautyStyle = TCBeautyStyleNature;
-    const TCFilterIdentifier defaultFilterIdentifier = TCFilterIdentifierNormal;
+    const BeautyMenuItem defaultBeautyStyle = BeautyMenuItemPiTu;
+    self.beautyStyle = BeautyMenuItemPiTu;
+    const TCFilterIdentifier defaultFilterIdentifier = TCFilterIdentifierBaiXi;
     // index = 0 为关闭
     NSUInteger defaultFilterIndex = [_filters indexOfObjectPassingTest:
                                      ^BOOL(TCFilter * _Nonnull obj,
@@ -212,7 +203,9 @@ static  TCBeautyPanelItem * makeMenuItem(NSString *title, UIImage *icon, id targ
     // 滤镜
     NSDictionary *defaultFilterValue = @{
                                      TCFilterIdentifierNone :@(0)
+                                     ,TCFilterIdentifierBaiXi :@(5)
                                     ,TCFilterIdentifierNormal :@(5)
+                                     ,TCFilterIdentifierZiRan :@(5)
                                     ,TCFilterIdentifierYinghong :@(8)
                                     ,TCFilterIdentifierYunshang :@(8)
                                     ,TCFilterIdentifierChunzhen :@(7)
@@ -241,8 +234,8 @@ static  TCBeautyPanelItem * makeMenuItem(NSString *title, UIImage *icon, id targ
 #ifndef UGC_SMART
     [self.beautyLevelDic setObject:@(DefaultBeautyLevel) forKey:@(BeautyMenuItemPiTu)];
 #endif
-    [self.beautyLevelDic setObject:@(DefaultWhitnessLevel) forKey:@(BeautyMenuItemWhite)];
-    [self.beautyLevelDic setObject:@(0) forKey:@(BeautyMenuItemRed)];
+//    [self.beautyLevelDic setObject:@(DefaultWhitnessLevel) forKey:@(BeautyMenuItemWhite)];
+//    [self.beautyLevelDic setObject:@(0) forKey:@(BeautyMenuItemRed)];
 
     NSInteger beautyValue = [self.beautyLevelDic[@(defaultBeautyStyle)] integerValue];
     [self setSliderValue:beautyValue];
@@ -268,7 +261,13 @@ static  TCBeautyPanelItem * makeMenuItem(NSString *title, UIImage *icon, id targ
         TCFilterIdentifier defaultFilterIdentifier = _filters[defaultFilterIndex].identifier;
         UIImage *lutImage = [self filterImageByMenuOptionIndex:defaultFilterIndex+1];
         [performer setFilter:lutImage];
-        [performer setFilterStrength:self.filterValueDic[defaultFilterIdentifier].floatValue/10.0];
+        
+        // v7.2后的版本使用 setFilterStrength
+        if ([self.actionPerformer respondsToSelector:@selector(setFilterStrength:)]) {
+            [performer setFilterStrength:self.filterValueDic[defaultFilterIdentifier].floatValue/10.0];
+        } else if([self.actionPerformer respondsToSelector:@selector(setFilterConcentration:)]){
+            [performer setFilterConcentration:self.filterValueDic[defaultFilterIdentifier].floatValue/10.0];
+        }
 
         // 重置各高级美颜选项，瘦脸大脸等
         NSArray<TCBeautyPanelItem *> *beautySettingItems = _optionsContainer[PanelMenuIndexBeauty];
@@ -309,7 +308,7 @@ static  TCBeautyPanelItem * makeMenuItem(NSString *title, UIImage *icon, id targ
     return [UIImage imageWithContentsOfFile:filter.lookupImagePath];
 }
 
--(float)filterStrengthAtIndex:(NSInteger)optionIndex
+-(float)filterMixLevelByIndex:(NSInteger)optionIndex
 {
     optionIndex = [self _converOptionIndexToFilterArrayIndex:optionIndex];
 
@@ -487,7 +486,7 @@ static  TCBeautyPanelItem * makeMenuItem(NSString *title, UIImage *icon, id targ
                 self.beautyStyle = optionIndex;
             }
 
-            TCBeautyPanelItem *item = _optionsContainer[menu.menuIndex][menu.optionIndex];
+             TCBeautyPanelItem *item = _optionsContainer[menu.menuIndex][menu.optionIndex];
             if ([item isKindOfClass:[ TCBeautyPanelItem class]]) {
                 self.slider.minimumValue = item.minValue;
                 self.slider.maximumValue = item.maxValue;
@@ -570,10 +569,15 @@ static  TCBeautyPanelItem * makeMenuItem(NSString *title, UIImage *icon, id targ
     [self setSliderValue:slider.value];
     NSInteger menuIndex = _menu.menuIndex;
     if(menuIndex == PanelMenuIndexFilter) {
+        if (_menu.optionIndex <= 0) { return; }
+        
         NSString *filterID = _filters[_menu.optionIndex-1].identifier;
         self.filterValueDic[filterID] = @(value);
-        if([self.actionPerformer respondsToSelector:@selector(setFilterStrength:)]){
+        // v7.2后的版本使用 setFilterStrength
+        if ([self.actionPerformer respondsToSelector:@selector(setFilterStrength:)]) {
             [self.actionPerformer setFilterStrength:value / 10.f];
+        } else if([self.actionPerformer respondsToSelector:@selector(setFilterConcentration:)]){
+            [self.actionPerformer setFilterConcentration:value / 10.f];
         }
     } else if(menuIndex == PanelMenuIndexBeauty) {
         // 美颜数值变化
@@ -606,7 +610,8 @@ static  TCBeautyPanelItem * makeMenuItem(NSString *title, UIImage *icon, id targ
             [self.actionPerformer setGreenScreenFile:nil];
         }
         if (index == 1) {
-            [self.actionPerformer setGreenScreenFile:[_theme goodLuckVideoFilePath]];
+            NSURL* url = [_theme goodLuckVideoFileURL];
+            [self.actionPerformer setGreenScreenFile:url.path];
         }
     }
 }

@@ -110,8 +110,8 @@ static void setImageForKey(id self, SEL selector, UIImage *image) {
     }
     return self;
 }
-- (NSString *)goodLuckVideoFilePath {
-    return [_resourceBundle pathForResource:@"goodluck" ofType:@"mp4"];
+- (NSURL *)goodLuckVideoFileURL {
+    return [_resourceBundle URLForResource:@"goodluck" withExtension:@"mp4"];
 }
 
 - (UIImage *)iconForFilter:(nonnull NSString *)filter {
@@ -189,7 +189,9 @@ static void setImageForKey(id self, SEL selector, UIImage *image) {
             @"TC.BeautyPanel.Menu.Gesture" : @"手势",
             @"TC.BeautyPanel.Menu.Cosmetic" : @"美妆",
             @"TC.Common.Filter_original" : @"原图",
+            @"TC.Common.Filter_baixi" : @"白皙",
             @"TC.Common.Filter_normal" : @"标准",
+            @"TC.Common.Filter_ziran" : @"自然",
             @"TC.Common.Filter_yinghong" : @"樱红",
             @"TC.Common.Filter_yunshang" : @"云裳",
             @"TC.Common.Filter_chunzhen" : @"纯真",

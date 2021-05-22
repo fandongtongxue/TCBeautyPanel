@@ -2,13 +2,13 @@
 
 #import "TCPituMotionManager.h"
 #import <UIKit/UIKit.h>
-#import "TCBeautyPanelTheme.h"
 
-#define Local(x) [[[TCBeautyPanelTheme alloc] init] localizedString:x]
+#define L(x) [self localizedString:x]
 
 @implementation TCPituMotionManager
 {
     NSMutableDictionary<NSString *, TCPituMotion *> *_map;
+    NSBundle *_resourceBundle;
 }
 
 + (instancetype)sharedInstance
@@ -25,28 +25,18 @@
 {
     self = [super init];
     if (self) {
+        [self setupBundle];
         NSArray *initList = @[
-            @[@"video_boom", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_boom.zip", Local(@"Boom")],
-            @[@"video_nihongshu", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_nihongshu.zip", Local(@"霓虹鼠")],
-            @[@"video_fengkuangdacall", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_fengkuangdacall.zip", Local(@"疯狂打call")],
-            @[@"video_Qxingzuo_iOS", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_Qxingzuo_iOS.zip", Local(@"Q星座")],
-            @[@"video_caidai_iOS", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_caidai_iOS.zip", Local(@"彩色丝带")],
-            @[@"video_liuhaifadai", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_liuhaifadai.zip", Local(@"刘海发带")],
-            @[@"video_purplecat", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_purplecat.zip", Local(@"紫色小猫")],
-            @[@"video_huaxianzi", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_huaxianzi.zip", Local(@"花仙子")],
-            @[@"video_baby_agetest", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_baby_agetest.zip", Local(@"小公举")],
-            // 星耳，变脸
-            @[@"video_3DFace_dogglasses2", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_3DFace_dogglasses2.zip", Local(@"眼镜狗")],
-            @[@"video_rainbow", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_rainbow.zip", Local(@"彩虹云")],
+            @[@"video_boom", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_boom.zip", L(@"Boom")],
         ];
         NSArray *gestureMotionArray = @[
-            @[@"video_pikachu", @"http://dldir1.qq.com/hudongzhibo/AISpecial/Android/181/video_pikachu.zip", Local(@"皮卡丘")],
+            @[@"video_pikachu", @"http://dldir1.qq.com/hudongzhibo/AISpecial/Android/181/video_pikachu.zip", L(@"TC.BeautySettingPanel.PikaQiu")],
         ];
         NSArray *cosmeticMotionArray = @[
-            @[@"video_qingchunzannan_iOS", @"http://res.tu.qq.com/materials/video_qingchunzannan_iOS.zip", Local(@"原宿复古")],
+            @[@"video_qingchunzannan_iOS", @"http://res.tu.qq.com/materials/video_qingchunzannan_iOS.zip", L(@"TC.BeautySettingPanel.Fu Gu")],
         ];
         NSArray *backgroundRemovalArray = @[
-            @[@"video_xiaofu", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_xiaofu.zip", Local(@"AI抠背")],
+            @[@"video_xiaofu", @"http://dldir1.qq.com/hudongzhibo/AISpecial/ios/160/video_xiaofu.zip", L(@"TC.BeautyPanel.Menu.BlendPic")],
         ];
         NSArray *(^generate)(NSArray *) = ^(NSArray *inputArray){
             NSMutableArray *array = [NSMutableArray arrayWithCapacity:inputArray.count];
@@ -58,7 +48,6 @@
             }
             return array;
         };
-
         _motionPasters = generate(initList);
         _cosmeticPasters = generate(cosmeticMotionArray);
         _gesturePasters = generate(gestureMotionArray);
@@ -70,6 +59,28 @@
 - (TCPituMotion *)motionWithIdentifier:(NSString *)identifier
 {
     return _map[identifier];
+}
+
+- (void)setupBundle {
+    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"UGCKitResources" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:resourcePath];
+    if (nil == bundle) {
+        bundle = [NSBundle mainBundle];
+    }
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"TCBeautyPanelResources" ofType:@"bundle"];
+    if (!path) {
+        path = [bundle pathForResource:@"TCBeautyPanelResources" ofType:@"bundle"];
+    }
+    NSBundle *panelResBundle = [NSBundle bundleWithPath:path];
+    if (panelResBundle) {
+        bundle = panelResBundle;
+    }
+    _resourceBundle = bundle ?: [NSBundle mainBundle];
+}
+
+- (NSString *)localizedString:(nonnull NSString *)key {
+    NSString *string = [_resourceBundle localizedStringForKey:key value:@"" table:nil];
+    return string ?: @"";
 }
 
 @end
