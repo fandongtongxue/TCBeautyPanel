@@ -2,6 +2,7 @@
 
 #import "TCPituMotionManager.h"
 #import <UIKit/UIKit.h>
+#import "TCBeautyPanelTheme.h"
 
 #define L(x) [self localizedString:x]
 
@@ -75,7 +76,7 @@
     if (panelResBundle) {
         bundle = panelResBundle;
     }
-    _resourceBundle = bundle ?: [NSBundle mainBundle];
+    _resourceBundle = [TCBeautyPanelTheme getBundleWithFName:@"TCBeautyPanel" bName:@"TCBeautyPanel"];
 }
 
 - (NSString *)localizedString:(nonnull NSString *)key {

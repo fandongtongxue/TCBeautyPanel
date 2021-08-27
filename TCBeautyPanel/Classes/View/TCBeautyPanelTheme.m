@@ -94,14 +94,56 @@ static void setImageForKey(id self, SEL selector, UIImage *image) {
     return [super resolveInstanceMethod:sel];
 }
 
++(NSBundle *)getBundleWithFName:(NSString *)fName bName:(NSString *)bName{
+    NSURL *bundleUrl = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
+    if (!bundleUrl) {
+        return [NSBundle mainBundle];
+    }
+    bundleUrl = [bundleUrl URLByAppendingPathComponent:fName];
+    bundleUrl = [bundleUrl URLByAppendingPathExtension:@"framework"];
+    NSBundle *bundle = [NSBundle bundleWithURL:bundleUrl];
+    NSURL *url = [bundle URLForResource:bName withExtension:@"bundle"];
+    return [NSBundle bundleWithURL:url];
+}
+
++ (UIImage *)getImageWithName:(NSString *)name type:(NSString *)type{
+    NSURL *associateBundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
+    associateBundleURL = [associateBundleURL URLByAppendingPathComponent:@"BogoShopKit"];
+    associateBundleURL = [associateBundleURL URLByAppendingPathExtension:@"framework"];
+    NSBundle *associateBundle = [NSBundle bundleWithURL:associateBundleURL];
+    associateBundleURL = [associateBundle URLForResource:@"TCBeautyPanel" withExtension:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithURL:associateBundleURL];
+    NSInteger scale = [[UIScreen mainScreen] scale];
+    NSString *imgName = [NSString stringWithFormat:@"%@@%zdx.%@",name,scale,type];
+    UIImage *image = [UIImage imageWithContentsOfFile:[bundle pathForResource:imgName ofType:nil]];
+    if (!image) {
+        NSString *imgNewName = [NSString stringWithFormat:@"%@.%@",name,type];
+        UIImage *newImage = [UIImage imageWithContentsOfFile:[bundle pathForResource:imgNewName ofType:nil]];
+        return newImage;
+    }
+    return image;
+}
+
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"TCBeautyPanel")] pathForResource:@"TCBeautyPanel" ofType:@"bundle"]];
+        NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"UGCKitResources" ofType:@"bundle"];
+        NSBundle *bundle = [NSBundle bundleWithPath:resourcePath];
+        if (nil == bundle) {
+            bundle = [NSBundle mainBundle];
+        }
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"TCBeautyPanelResources" ofType:@"bundle"];
+        if (!path) {
+            path = [bundle pathForResource:@"TCBeautyPanelResources" ofType:@"bundle"];
+        }
+        NSBundle *panelResBundle = [NSBundle bundleWithPath:path];
+        if (panelResBundle) {
+            bundle = panelResBundle;
+        }
         _imageDict = [NSMutableDictionary dictionary];
 
-        _resourceBundle = bundle ?: [NSBundle mainBundle];
+        _resourceBundle = [TCBeautyPanelTheme getBundleWithFName:@"TCBeautyPanel" bName:@"TCBeautyPanel"];
 
         _beautyPanelTitleColor = [UIColor whiteColor];
         _beautyPanelSelectionColor = [UIColor colorWithRed:0xff/255.0 green:0x58/255.0 blue:0x4c/255.0 alpha:1];

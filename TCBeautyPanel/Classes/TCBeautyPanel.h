@@ -22,3 +22,5 @@ FOUNDATION_EXPORT const unsigned char TCBeautyPanelVersionString[];
 #import <TCBeautyPanel/TCBeautyPanelTheme.h>
 #import <TCBeautyPanel/TCMenuView.h>
 #import <TCBeautyPanel/TCBeautyPanelActionProxy.h>
+
+

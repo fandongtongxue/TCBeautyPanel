@@ -88,6 +88,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIImage *)iconForFilter:(NSString *)filter;
 - (UIImage *)imageNamed:(NSString *)name;
 - (NSURL *)goodLuckVideoFileURL;
+
++ (UIImage *)getImageWithName:(NSString *)name type:(NSString *)type;
++(NSBundle *)getBundleWithFName:(NSString *)fName bName:(NSString *)bName;
 @end
 
 

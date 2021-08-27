@@ -10,6 +10,15 @@
 #endif
 #endif
 
+#import "TCFilter.h"
+#import "TCBeautyPanelActionPerformer.h"
+#import "TCBeautyPanelActionProxy.h"
+#import "TCPituMotionManager.h"
+#import "TCBeautyPanel.h"
+#import "TCMenuItemCell.h"
+#import "TCMenuView.h"
+#import "TCBeautyPanelTheme.h"
+#import "TCBeautyPanelView.h"
 
 FOUNDATION_EXPORT double TCBeautyPanelVersionNumber;
 FOUNDATION_EXPORT const unsigned char TCBeautyPanelVersionString[];
