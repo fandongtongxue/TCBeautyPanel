@@ -11,7 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 Beauty | Filter
 ------- | ------- 
-![](SnapShot/Beauty.jpeg) | ![](SnapShot/Filter.jpeg)
+![](SnapShot/Beauty.jpeg)|![](SnapShot/Filter.jpeg)
 
 ## Requirements
 
