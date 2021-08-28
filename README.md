@@ -9,6 +9,10 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+Beauty | Filter
+------- | ------- 
+![](Snapshot/Beauty.jpeg) | ![](Snapshot/Filter.jpeg)
+
 ## Requirements
 
 ## Installation
